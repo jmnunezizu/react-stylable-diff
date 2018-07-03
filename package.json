@@ -4,7 +4,7 @@
   "description": "Output differences between inputs, ready for css styling",
   "main": "dist/react-diff.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel lib/react-diff.js > dist/react-diff.js"
+    "build": "./node_modules/.bin/babel --plugins transform-react-jsx lib/react-diff.js > dist/react-diff.js"
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,8 @@
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1"
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
   },
   "false": {}
 }
